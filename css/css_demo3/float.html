@@ -1,129 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flaot</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      ul {
-        list-style: none;
-      }
-      img {
-        max-width: 100%;
-      }
-      header {
-        background-color: grey;
-        /* display: block; */
-        color: white;
-      }
-      .clearfix:after {
-        clear: both;
-        content: '';
-        display: block;
-      }
 
-      .logo {
-        background: grey;
-        margin-top: 7px;
-        background-color: gray;
-        display: inline-block;
-        float: left;
-      }
-      .logo > img {
-        height: 26px;
-        vertical-align: middle;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>float</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      .nav {
-        margin-left: 20px;
-        float: right;
-      }
-      ul > li {
-        float: left;
-        padding: 4px 0.5em;
-        line-height: 32px;
-      }
-      .content {
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      aside {
-        width: 200px;
-        height: 300px;
-        float: left;
-        background-color: #000;
-      }
-      main {
-        height: 300px;
-        width: 500px;
-        float: left;
-        background-color: #555;
-      }
-      .ad {
-        height: 300px;
-        width: 100px;
-        float: left;
-        background-color: #666;
-      }
-      .imageList {
-        width: 800px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .image {
-        height: 300px;
-        width: 191px;
-        margin-right: 12px;
-        background-color: #000;
-        float: left;
-        margin-bottom: 10px;
-      }
-      .x {
-        margin-right: -12px;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="clearfix">
-      <div class="logo">
-        <img
-          src="https://lupic.cdn.bcebos.com/20210629/2001886797_14.jpg"
-          alt=""
-        />
-      </div>
-      <ul class="clearfix nav">
-        <li>首页</li>
-        <li>课程</li>
-        <li>优惠</li>
-        <li>关于</li>
-      </ul>
-    </header>
+    ul {
+      list-style: none;
+    }
 
-    <div class="content clearfix">
-      <aside></aside>
-      <main></main>
-      <div class="ad"></div>
+    img {
+      max-width: 100%;
+    }
+
+    header {
+      background-color: grey;
+      /* display: block; */
+      color: white;
+    }
+
+    .clearfix:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+
+    .logo {
+      background: grey;
+      margin-top: 7px;
+      background-color: gray;
+      display: inline-block;
+      float: left;
+    }
+
+    .logo>img {
+      height: 26px;
+      vertical-align: middle;
+    }
+
+    .nav {
+      margin-left: 20px;
+      float: right;
+    }
+
+    ul>li {
+      float: left;
+      padding: 4px 0.5em;
+      line-height: 32px;
+    }
+
+    .content {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    aside {
+      width: 200px;
+      height: 300px;
+      float: left;
+      background-color: #000;
+    }
+
+    main {
+      height: 300px;
+      width: 500px;
+      float: left;
+      background-color: #555;
+    }
+
+    .ad {
+      height: 300px;
+      width: 100px;
+      float: left;
+      background-color: #666;
+    }
+
+    .imageList {
+      width: 800px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .image {
+      height: 300px;
+      width: 191px;
+      margin-right: 12px;
+      background-color: #000;
+      float: left;
+      margin-bottom: 10px;
+    }
+
+    .x {
+      margin-right: -12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="https://lupic.cdn.bcebos.com/20210629/2001886797_14.jpg" alt="" />
     </div>
+    <ul class="clearfix nav">
+      <li>首页</li>
+      <li>课程</li>
+      <li>优惠</li>
+      <li>关于</li>
+    </ul>
+  </header>
 
-    <div class="imageList">
-      <div class="x clearfix">
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-      </div>
+  <div class="content clearfix">
+    <aside></aside>
+    <main></main>
+    <div class="ad"></div>
+  </div>
+
+  <div class="imageList">
+    <div class="x clearfix">
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

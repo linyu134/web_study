@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid
+
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid red;
+            display: inline-grid;
+            grid-template-rows: 191px 191px 191px;
+            grid-template-columns: 191px 191px 191px 191px 191px;
+            grid-template-areas: "fr fr fr fr"
+                "fr fr fr fr";
+        }
+
+        div>.image:first-child {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(2) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(3) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(4) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(5) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(6) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(7) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+
+        div>.image:nth-child(8) {
+            grid-area: fr;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+        <div class="image frImage"></div>
+    </div>
+</body>
+
+</html>

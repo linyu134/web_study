@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页</title>
+
+</head>
+
+<body>
+    <style contenteditable="">
+        style {
+            display: block;
+            border: 1px solid red;
+        }
+
+        .middle {
+            background: black;
+            color: white;
+        }
+
+        .bordered {
+            border: 10px solid red;
+        }
+    </style>
+    <header hidden tabindex="1">顶部</header>
+    <div class="middle bordered" contenteditable>
+        <main>
+            <h1 tabindex="200" title="文章标题内容">文章标题</h1>
+            <h2>副标题</h2>
+            <section>
+                <h2>第一章</h2>
+                <p>第一段第一段第一段第一段第一段</p>
+            </section>
+            <table>
+
+            </table>
+        </main>
+        <aside>
+            参考资料
+        </aside>
+    </div>
+    <footer tabindex="3">&copy;底部</footer>
+</body>
+
+</html>

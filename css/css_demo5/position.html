@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>position</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 1px solid red;
+      width: 800px;
+      height: 800px;
+      position: relative;
+    }
+
+    .x {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 1px solid red;
+      padding: 10px;
+      background-color: gray;
+      color: white;
+    }
+
+    button {
+      margin-top: 100px;
+      margin-left: 100px;
+      position: relative;
+    }
+
+    .tips {
+      position: absolute;
+      white-space: nowrap;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid red;
+      display: none;
+    }
+
+    button:hover .tips {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="x">x</div>
+    <button>点击
+      <span class="tips">提示内容</span>
+    </button>
+  </div>
+</body>
+
 </html>

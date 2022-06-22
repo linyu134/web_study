@@ -25,11 +25,11 @@ var server = http.createServer(function(request, response){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`
-    <!DOTYPE html>
+    <!DOCTYPE html>
     <html>
     <head>
     <link rel="stylesheet" href="./style">
-    <title>标题<title>
+    <title>标题</title>
     </head>
     <body>
     <h1>标题</h1>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lineDrawing</title>
+    <link rel="stylesheet" href="pointDrawing.css">
+</head>
+
+<body>
+    <canvas id="canvas" width="150" height="150"></canvas>
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        canvas.width = document.documentElement.clientWidth;
+        canvas.height = document.documentElement.clientHeight;
+
+        let painting = false;
+        ctx.fillStyle = 'black';
+        ctx.strokeStyle = 'none';
+
+        canvas.onmousedown = () => {
+            painting = true;
+        }
+
+        canvas.onmousemove = (e) => {
+            if (painting === true) {
+                ctx.beginPath();
+                ctx.arc(e.clientX, e.clientY, 10, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+            } else {
+                console.log('什么都不做');
+            }
+
+        }
+
+        canvas.onmouseup = () => {
+            painting = false;
+        }
+    </script>
+</body>
+
+</html>

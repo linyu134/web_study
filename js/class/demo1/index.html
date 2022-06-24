@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let widthList = [5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6];
+        //for循环实现12个正方形对象
+        let squareList = [];
+        for (let i = 0; i < 12; i++) {
+            squareList[i] = {
+                width: widthList[i],
+                getArea() {
+                    return this.width * this.width;
+                },
+                getLength() {
+                    return this.width * 4;
+                }
+            }
+        }
+
+        //原型实现12个正方形对象
+        let squarePrototype = {
+            getArea() {
+                return this.width * this.width;
+            },
+            getLength() {
+                return this.width * 4;
+            }
+        }
+        let squareList1 = [];
+        for (let i = 0; i < 12; i++) {
+            squareList1[i] = Object.create(squarePrototype);
+            squareList[i].width = widthList[i];
+
+        }
+
+        //构造函数实现12个正方形对象
+        let squarePrototype1 = {
+            getArea() {
+                return this.width * this.width;
+            },
+            getLength() {
+                return this.width * 4;
+            }
+        }
+        function createSquare(width) {  //构造对象的函数就是构造函数
+            let obj = Object.create(squarePrototype1);
+            obj.width = width;
+            return obj
+        }
+
+        let squareList2 = [];
+        for (let i = 0; i < 12; i++) {
+            squareList[i] = createSquare(widthList[i]);
+        }
+    </script>
+</body>
+
+</html>
